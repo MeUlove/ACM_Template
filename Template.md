@@ -178,6 +178,21 @@ int main() {
 }
 ```
 
+## 快速幂 
+```cpp
+ll q_mi(ll a,ll b)
+{
+	ll sum=1;
+	while(b)
+	{
+		if(b&1)sum=(sum*a)%MOD;
+		a=(a*a)%MOD;
+		b>>=1; 
+	}
+	return sum;
+}
+```
+
 #  图论
 
 ## 最短路
